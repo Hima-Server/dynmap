@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>暇人鯖 マイクラ鯖マップ</title>
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            min-height: 100vh; /* ビューポートの高さを全体に設定 */
             margin: 0;
-            background-color: #f4f4f4; /* 背景色を設定（任意） */
+            background-color: #f4f4f4; /* 背景色 */
             font-family: Arial, sans-serif;
             text-align: center;
         }
 
-        img {
-            max-width: 100%; /* 画像が画面サイズを超えないようにする */
-            max-height: 80vh; /* 画像が高さを超えないようにする */
+        .navbar {
+            width: 100%;
+            background-color: #333; /* ナビゲーションバーの背景色 */
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-flex;
+            align-items: center;
+            color: white; /* テキストの色 */
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .navbar img {
+            height: 40px; /* ロゴ画像の高さ */
+            margin-right: 10px; /* 画像とテキストの間隔 */
+        }
+
+        .content {
+            margin-top: 70px; /* ナビゲーションバーの高さ分を確保 */
         }
 
         h1 {
@@ -27,25 +48,23 @@
             color: #555;
         }
 
-        a {
+        p {
             margin-top: 10px;
-            display: inline-block;
-            font-size: 1.2rem;
-            color: #007acc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+            font-size: 1rem;
+            color: #666;
         }
     </style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>暇人鯖 マイクラ鯖マップ</title>
 </head>
 <body>
-    <h1>暇人鯖の全てのマイクラ鯖のマップが公開されています。</h1>
-    <p>Powered by DynMap</p>
+    <div class="navbar">
+        <a href="https://hima-server.com">
+            <img src="data/cdn/logo.png" alt="暇人鯖ロゴ">
+            暇人鯖公式サイト
+        </a>
+    </div>
+    <div class="content">
+        <h1>暇人鯖の全てのマイクラ鯖のマップが公開されています。</h1>
+        <p>Powered by DynMap</p>
+    </div>
 </body>
 </html>
