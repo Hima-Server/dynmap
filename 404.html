@@ -4,29 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Not Found</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        .error-container {
+        body {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            height: 100vh; 
+            align-items: center;
+            min-height: 100vh; 
+            margin: 0;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
-        .error-container img {
-            max-width: 100%;
-            max-height: 50vh; 
+        img {
+            max-width: 100%; 
+            max-height: 80vh; 
         }
 
-        .error-container h1 {
-            margin: 20px 0;
+        h1 {
+            margin-top: 20px;
             font-size: 2rem;
             color: #555;
         }
 
-        .error-container a {
+        a {
             margin-top: 10px;
             display: inline-block;
             font-size: 1.2rem;
@@ -34,13 +35,13 @@
             text-decoration: none;
         }
 
-        .error-container a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="error-container">
+    <div>
         <img src="data/cdn/404.png" alt="404 Image">
         <h1>404 - Page Not Found</h1>
         <a href="index.html">Go back to the homepage</a>
